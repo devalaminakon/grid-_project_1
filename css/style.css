@@ -1,0 +1,89 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body{
+  font-family: "Inter", sans-serif;
+}
+/* common css end */
+
+
+/* navbar start */
+nav{
+    background: rgba(57, 71, 146, 1);
+    color: #fff;
+}
+nav .sidebyside{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+nav .menu {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 60px;
+}
+nav .menu ul{
+    display: contents;
+}
+
+nav .menu ul li{
+    position: relative;
+    cursor: pointer;
+}
+nav .menu ul li::after{
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: .5s;
+}
+nav .menu ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+nav .menu ul li:hover::after{
+    width: 96%;
+}
+
+nav .logo {
+    justify-self: center;
+}
+nav .logo img{
+    height: 32px;
+}
+
+nav .btn {
+    justify-self: end;
+}
+nav .btn a{
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 16px 40px;
+    transition: 0.5s;
+}
+nav .btn a:hover{
+    border-color:#fff;
+}
+
+/* navbar end */
